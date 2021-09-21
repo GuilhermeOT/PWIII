@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <form name="cadastro" method="POST" action="api.php?apicall=createhero">
+
+       
+<h2>Cadastro:</h2>
+        
+       Nome
+       <input  type="text" name="name"><br /><br />
+        Realnome
+        <input type="text" name="realname"> <br />
+        <br />
+        Rating
+        <input type="text" name="rating"><br /><br />
+		teamaffiliation
+        <input type="text" name="teamaffiliation"> <br />
+        <br />
+
+    
+        <input type="submit" value="ENVIAR" class="btn">
+        </form>
+<br />
+<br />
+
+
+        <form  name="cadastro" method="POST" action="api.php?apicall=updatehero" >
+
+            <h2>Atualizar cadastro</h2>
+
+            Id
+            <input type="text" name="id"><br /><br />
+
+            Nome
+            <input type="text" name="name"><br /><br />
+            Realnome
+            <input type="text" name="realname"> <br />
+            <br />
+            Rating
+            <input type="text" name="rating"><br /><br />
+            teamaffiliation
+            <input type="text" name="teamaffiliation"> <br />
+            <br />
+    
+        
+            <input type="submit" value="ENVIAR" class="btn">
+            </form>
+
+            <br />
+<br />
+        <form name="cadastro"  method="GET" action="api.php" class="id">
+
+
+            <h2>Deletar cadastro</h2>
+            Id
+            <input type="hidden" value="deletehero" name="apicall"><br /><br />
+            <input type="text" name="id"><br /><br />
+        
+    
+        
+            <input type="submit" value="ENVIAR" class="btn2">
+            </form>
+</body>
+</html>
